@@ -810,11 +810,17 @@ border-width: 1px;
 .modal-btn {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
 
-  border: none;
   background-color: transparent;
   cursor: pointer;
 
@@ -957,7 +963,7 @@ border-width: 1px;
 }
 
 .checkbox-icon {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   justify-content: center;
@@ -970,6 +976,8 @@ border-width: 1px;
 
   background-color: transparent;
   background-origin: border-box;
+
+  color: transparent;
 }
 
 .icon-check {
@@ -983,6 +991,7 @@ border-width: 1px;
 .form-checkbox:checked+.checkbox-icon {
   border-color: transparent;
   background-color: var(--accent-text-color);
+  color: var(--white-color);
 }
 
 .checkbox-text {
