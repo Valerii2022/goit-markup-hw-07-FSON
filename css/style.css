@@ -573,7 +573,8 @@ border-width: 1px;
   color: var(--white-color);
 }
 
-.sign-up-block {}
+.sign-up-block {
+}
 
 .sign-up-form {
   display: flex;
@@ -647,6 +648,7 @@ border-width: 1px;
   border-radius: 4px;
   padding: 6px 22px;
   box-shadow: none;
+  cursor: pointer;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -668,8 +670,8 @@ border-width: 1px;
   margin-bottom: 50px;
 }
 
-.radio-btn:focus+.radio-label,
-.radio-btn:checked+.radio-label {
+.radio-btn:focus + .radio-label,
+.radio-btn:checked + .radio-label {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
@@ -848,7 +850,8 @@ border-width: 1px;
   color: var(--secondary-text-color);
 }
 
-.modal-form {}
+.modal-form {
+}
 
 .input-label {
   display: block;
@@ -893,12 +896,13 @@ border-width: 1px;
   border: 1px solid var(--accent-text-color);
 }
 
-.modal-input:hover+.modal-input-icon,
-.modal-input:focus+.modal-input-icon {
+.modal-input:hover + .modal-input-icon,
+.modal-input:focus + .modal-input-icon {
   fill: var(--accent-text-color);
 }
 
-.input-label {}
+.input-label {
+}
 
 .modal-textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -963,7 +967,8 @@ border-width: 1px;
 }
 
 .checkbox-icon {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   justify-content: center;
@@ -984,11 +989,11 @@ border-width: 1px;
   fill: currentColor;
 }
 
-.form-checkbox:focus+.checkbox-icon {
+.form-checkbox:focus + .checkbox-icon {
   border: 2px solid var(--accent-text-color);
 }
 
-.form-checkbox:checked+.checkbox-icon {
+.form-checkbox:checked + .checkbox-icon {
   border-color: transparent;
   background-color: var(--accent-text-color);
   color: var(--white-color);
