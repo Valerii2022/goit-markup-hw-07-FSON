@@ -440,8 +440,12 @@
         <label class="input-label" for="feedback">Коментар</label>
         <textarea class="modal-textarea" name="user-feedback" id="feedback" placeholder="Введіть текст"></textarea>
         <label class="checkbox-label">
-          <input type="checkbox" class="form-checkbox" name="form-checkbox">
-          <span class="checkbox-icon"></span>
+          <input type="checkbox" class="form-checkbox hidden" name="form-checkbox">
+          <span class="checkbox-icon">
+            <svg class="icon-check" width="32" height="32">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
           <span class="checkbox-text">Погоджуюся з розсилкою та приймаю</span>
           <a class="checkbox-link" href="#">Умови договору</a>
         </label>
