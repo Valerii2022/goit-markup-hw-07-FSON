@@ -4,21 +4,17 @@
    font-size: 26px;
    line-height: 1.19;
    text-decoration: none;
- }
+
+   &__accent {
+      color: var(--accent-text-color);
+   }
+}
  
- .logo .accent {
-   color: var(--accent-text-color);
- }
  
- .logo-primary {
-   margin-right: 93px;
- 
-   color: var(--logo-text-color);
- }
  
  .logo-secondary {
    display: inline-block;
    margin-bottom: 20px;
- 
+
    color: var(--white-color);
- }
+}

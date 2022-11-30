@@ -1,22 +1,19 @@
 .page-header {
    border-bottom: 1px solid var(--border-line-color);
- }
- 
- .page-header .link {
-   display: block;
-   padding: 30px 3px;
-   height: 100%;
- }
- 
- .header-wrapper {
-   display: flex;
-   justify-content: space-between;
- }
- 
- .header-nav {
-   display: flex;
- }
- 
- .header-nav .logo {
-   align-self: center;
- }
+
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   
+   &__nav {
+      display: flex;
+   }
+
+   &__logo {
+      margin-right: 93px;
+
+      color: var(--logo-text-color);
+      align-self: center;
+   }
+}

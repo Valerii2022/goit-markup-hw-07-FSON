@@ -51,13 +51,6 @@ ul {
   padding: 94px 0;
 }
 
-.section-title {
-  color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 .hidden {
   position: absolute;
   width: 1px;
@@ -76,14 +69,8 @@ ul {
   line-height: 1.19;
   text-decoration: none;
 }
-
-.logo .accent {
+.logo__accent {
   color: var(--accent-text-color);
-}
-
-.logo-primary {
-  margin-right: 93px;
-  color: var(--logo-text-color);
 }
 
 .logo-secondary {
@@ -95,14 +82,7 @@ ul {
 .page-header {
   border-bottom: 1px solid var(--border-line-color);
 }
-
-.page-header .link {
-  display: block;
-  padding: 30px 3px;
-  height: 100%;
-}
-
-.header-wrapper {
+.page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,14 +90,14 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.header-nav {
+.page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.header-nav .logo {
+.page-header__logo {
+  margin-right: 93px;
+  color: var(--logo-text-color);
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -127,12 +107,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-
-.site-nav .link {
+.site-nav__link {
+  display: block;
+  padding: 30px 3px;
+  height: 100%;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -140,18 +121,15 @@ ul {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-text-color);
 }
 
-.site-nav .current {
+.current {
   position: relative;
   color: var(--accent-text-color);
 }
-
-.site-nav .current::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -170,24 +148,22 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
-.contacts-list .item:not(:first-child) {
+.contacts-list__item:not(:first-child) {
   margin-left: 50px;
 }
-
-.contacts-list .link {
+.contacts-list__link {
+  display: block;
+  padding: 30px 3px;
+  height: 100%;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
-.contacts-list .link:hover,
-.contacts-list .link:focus {
+.contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-text-color);
 }
-
-.contacts-list .header-icon {
+.contacts-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -202,8 +178,7 @@ ul {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
-
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -216,11 +191,13 @@ ul {
   text-transform: uppercase;
   color: var(--white-color);
 }
-
-.button {
+.hero__btn {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
+}
+
+.button {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -232,7 +209,18 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  background-color: var(--accent-text-color);
+  background: var(--accent-text-color);
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  color: var(--secondary-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .features-list {
@@ -639,18 +627,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: none;
-  background: var(--accent-text-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
 }
 
 .sign-up-btn span {

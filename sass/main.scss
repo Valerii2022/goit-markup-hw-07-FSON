@@ -7,9 +7,14 @@
 @import './components/logo';
 @import './layouts/page-header';
 @import './layouts/site-nav';
+@import './utils/current';
 @import './layouts/contacts-list';
 @import './layouts/hero';
 @import './components/button';
+
+@import './components/section';
+@import './components/title';
+
 @import './layouts/features';
 @import './layouts/working';
 @import './layouts/our-team';

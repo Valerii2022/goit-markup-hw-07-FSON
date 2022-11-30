@@ -24,35 +24,35 @@
   <body>
     <!--header-->
     <header class="page-header">
-      <div class="container header-wrapper">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo logo-primary">
-            <span class="accent">Web</span>Studio
+      <div class="container page-header__wrapper">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="page-header__logo logo">
+            <span class="logo__accent">Web</span>Studio
           </a>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current"> Студія </a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link link current"> Студія </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link"> Портфоліо </a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link link"> Портфоліо </a>
             </li>
-            <li class="item">
-              <a href="#" class="link"> Контакти </a>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link link"> Контакти </a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-list list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="header-icon" width="16" height="12">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.com" class="contacts-list__link link">
+              <svg class="contacts-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__link link">
+              <svg class="contacts-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -65,8 +65,8 @@
     <main>
       <!--hero section-->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button" data-modal-open>Замовити послугу</button>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__btn button" data-modal-open>Замовити послугу</button>
       </section>
       <!--features section-->
       <section class="section">
@@ -445,7 +445,7 @@
             <label class="sign-up-label">
               <input class="sign-up-input" type="text" name="sign-up-email" placeholder="E-mail"
             /></label>
-            <button class="sign-up-btn" type="submit">
+            <button class="sign-up-btn button" type="submit">
               <span>Підписатися</span>
               <svg class="sign-up-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
