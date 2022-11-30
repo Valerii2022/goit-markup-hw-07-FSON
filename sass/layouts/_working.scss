@@ -1,0 +1,39 @@
+.working {
+   padding-top: 0;
+ }
+ 
+ .working .section-title {
+   margin-bottom: 50px;
+ }
+ 
+ .working-list {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .working-list .img {
+   display: block;
+ }
+ 
+ .working .item {
+   position: relative;
+ }
+ 
+ .working .title {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+ 
+   padding-top: 27px;
+   padding-bottom: 27px;
+   background: rgba(47, 48, 58, 0.8);
+ 
+   font-size: 14px;
+   line-height: 1.14;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+ 
+   color: var(--white-color);
+ }
