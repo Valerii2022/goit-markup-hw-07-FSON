@@ -6,8 +6,7 @@
    }
 
    &__list {
-      display: flex;
-      justify-content: space-between;
+      @include flex(flex, space-between, null);
    }
 
    &__img {
@@ -28,10 +27,8 @@
       padding-bottom: 27px;
       background: rgba(47, 48, 58, 0.8);
 
-      font-size: 14px;
-      line-height: 1.14;
+      @include font(null, 14px, 1.14, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
       text-transform: uppercase;
 
       color: var(--white-color);

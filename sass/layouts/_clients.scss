@@ -15,9 +15,7 @@
    }
 
    &__link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
       height: 100%;
       width: 100%;
 

@@ -39,9 +39,7 @@
       height: 32px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
       position: absolute;
       top: 8px;
       right: 8px;
@@ -64,11 +62,8 @@
    &__title {
       margin-bottom: 12px;
 
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.15;
+      @include font(700, 20px, 1.15, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
 
       color: var(--secondary-text-color);
    }

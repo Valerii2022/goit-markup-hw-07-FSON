@@ -13,14 +13,6 @@
   --icon-color: #afb1b8;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: var(--white-color);
-}
-
 h1,
 h2,
 h3,
@@ -41,10 +33,22 @@ ul {
   list-style: none;
 }
 
+.modal-form__btn, .hero__btn, .hero__title, .hero, .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
-  margin: 0 auto;
 }
 
 .section {
@@ -172,8 +176,6 @@ ul {
   padding: 200px 0;
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--bg-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -181,19 +183,16 @@ ul {
 .hero__title {
   max-width: 696px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
 }
 .hero__btn {
   display: block;
-  margin: 0 auto;
   padding: 10px 32px;
 }
 
@@ -288,8 +287,8 @@ ul {
   background: rgba(47, 48, 58, 0.8);
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -424,7 +423,6 @@ ul {
   padding: 60px 0;
   background-color: var(--primary-background-color);
 }
-
 .footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,45 +434,36 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--white-color);
 }
-
 .footer__address-wrap {
   margin-right: 70px;
 }
-
 .footer__address {
   margin-bottom: 9px;
   font-style: normal;
   line-height: 1.5;
   color: var(--white-color);
 }
-
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .footer__link {
   line-height: 1.5;
   color: var(--address-link-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__link:hover,
-.footer__link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-text-color);
 }
-
 .footer__join-in {
   padding-top: 12px;
   margin-right: auto;
 }
-
 .footer__join-in-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -586,7 +575,6 @@ ul {
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -751,8 +739,8 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-text-color);
 }
 
@@ -766,7 +754,7 @@ ul {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01;
   color: var(--primary-text-color);
 }
 .modal-form__input-wrap {
@@ -846,29 +834,27 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__btn {
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--white-color);
   background-color: var(--accent-text-color);
 }

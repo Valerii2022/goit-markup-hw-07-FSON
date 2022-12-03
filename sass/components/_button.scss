@@ -5,10 +5,7 @@
    cursor: pointer;
 
    font-family: "Roboto", sans-serif;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.88;
-   letter-spacing: 0.06em;
+   @include font(700, 16px, 1.88, 0.06em);
 
    color: var(--white-color);
    background: var(--accent-text-color);

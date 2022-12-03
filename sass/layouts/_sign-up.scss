@@ -2,9 +2,7 @@
    &__title {
       margin-bottom: 20px;
 
-      font-weight: 700;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
+      @include font(700, null, 1.14, 0.03em);
       text-transform: uppercase;
 
       color: var(--white-color);
@@ -25,9 +23,7 @@
       border-radius: 4px;
       outline: transparent;
 
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
+      @include font(null, 16px, 1.25, 0.03em);
 
       color: rgba(255, 255, 255, 0.6);
       background-color: transparent;
@@ -39,9 +35,7 @@
    }
 
    &__input::placeholder {
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
+      @include font(null, 16px, 1.25, 0.03em);
 
       color: rgba(255, 255, 255, 0.6);
    }
@@ -49,9 +43,7 @@
    &__btn {
       width: 200px;
       height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
    }
 
    &__text {

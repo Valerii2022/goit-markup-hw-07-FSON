@@ -8,9 +8,7 @@
       height: 120px;
       margin-bottom: 30px;
       border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
 
       background: var(--secondary-background-color);
    }
@@ -22,9 +20,7 @@
    &__title {
       margin-bottom: 10px;
 
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
+      @include font(700, 14px, 1.14, null);
       text-transform: uppercase;
 
       color: var(--secondary-text-color);
